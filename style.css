@@ -83,3 +83,58 @@ p {
 .download-btn:hover {
   background: #005fcc;
   }
+/* Hamburger Menu */
+.hamburger {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 35px;
+  height: 3px;
+  background: #fff;
+  cursor: pointer;
+  transition: .3s;
+}
+.hamburger::before, .hamburger::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background: #fff;
+  transition: .3s;
+}
+.hamburger::before {
+  top: -10px;
+}
+.hamburger::after {
+  top: 10px;
+}
+
+/* Menu Slide */
+#menu {
+  position: fixed;
+  top: 0;
+  left: -220px;
+  width: 200px;
+  height: 100%;
+  background: #111;
+  padding-top: 60px;
+  transition: .3s;
+}
+
+#menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-bottom: 1px solid #333;
+}
+
+#menu a:hover {
+  background: #333;
+}
+
+/* Saat aktif */
+.menu-active {
+  left: 0 !important;
+}
+
