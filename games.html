@@ -7,10 +7,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="games.html">Games</a>
-  </nav>
+  <div class="hamburger" onclick="toggleMenu()"></div>
+
+<nav id="menu">
+  <a href="index.html">Home</a>
+  <a href="games.html">Games</a>
+</nav>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById('menu');
+  menu.classList.toggle('menu-active');
+}
+</script>
 
   <div class="container">
     <h1>Game Buatan Ariya 🎮</h1>
