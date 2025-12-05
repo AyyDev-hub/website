@@ -11,6 +11,7 @@ const nav = document.getElementById("nav");
 pages.forEach(p => {
   nav.innerHTML += `<li><a href="${p.link}">${p.name}</a></li>`;
 });
+</script>
 
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
@@ -24,4 +25,3 @@ function toggleMenu() {
 
 hamburger.addEventListener('click', toggleMenu);
 menuOverlay.addEventListener('click', toggleMenu);
-</script>
